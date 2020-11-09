@@ -95,5 +95,5 @@ int main()
     case 6:  printf("ĞÇÆÚÈÕ");      
 	break;
   }
-  return 0;
+  return 0 ;
 }
