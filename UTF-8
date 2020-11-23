@@ -34,7 +34,7 @@ int main()
 		    {printf("%x", 0XE98482);}
 		  if((unsigned)a[j] == 0xffffffB9 && a[j+1] == 0xffffffF0)
 		    {printf("%x", 0XE6A182);}
-	      if((unsigned)a[j] == 0xffffffB8 && a[j+1] == 0xffffffCA)
+	          if((unsigned)a[j] == 0xffffffB8 && a[j+1] == 0xffffffCA)
 		    {printf("%x", 0XE79498);}
 		  if((unsigned)a[j] == 0xffffffBD && a[j+1] == 0xffffffFA)
 		    {printf("%x", 0XE6998B);} 
