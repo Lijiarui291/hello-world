@@ -84,7 +84,6 @@ int main()
 		    {printf("%x", 0XE9A286);}
 		  j += 2;
 		}
-    	else printf("%c", a[j]), j++;
-	}
+    	else printf("%c", a[j]), j++;}
 	return 0;
 }
