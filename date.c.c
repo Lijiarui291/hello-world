@@ -3,7 +3,7 @@ int main()
 {
 	int day, month, year;
   
-  printf("Enter date (ÈÕÆÚ / ÔÂ·Ý / Äê): ");
+  printf("Enter date (æ—¥æœŸ / æœˆä»½ / å¹´): ");
   scanf("%d/%d/%d", &day, &month, &year);
   if((month > 12 )|| (month <= 0)) {
 		printf("Error");
@@ -11,7 +11,7 @@ int main()
   }
   switch (month) {
     case 1: case 3: case 5: case 7: case 8: case 10: case 12:
-	if((day > 31) || (day <= 0))//×¢ÒâifµÄÀ¨ºÅÀïÃ»ÓÐÒýºÅ
+	if((day > 31) || (day <= 0))//æ³¨æ„ifçš„æ‹¬å·é‡Œæ²¡æœ‰å¼•å·
 		  {printf("Error");
 	      return 0;
 	      }
@@ -73,26 +73,26 @@ int main()
 	break;
   }
    printf(", %.4d.\n", year);
-   if((month == 1) || (month == 2))//Èç¹ûÊÇÒ»ÔÂ»ò¶þÔÂ½øÐÐ»»Ëã 
+   if((month == 1) || (month == 2))//å¦‚æžœæ˜¯ä¸€æœˆæˆ–äºŒæœˆè¿›è¡Œæ¢ç®— 
    {
     month += 12;
     year--;
    }
     int w = (day + 2 * month + 3 * (month + 1) / 5 + year + year / 4 - year / 100 + year / 400) % 7; 
     switch(w){
-  	case 0:  printf("ÐÇÆÚÒ»");
+    case 0:  printf("æ˜ŸæœŸä¸€");
     break;
-    case 1:  printf("ÐÇÆÚ¶þ");  
+    case 1:  printf("æ˜ŸæœŸäºŒ");  
 	break;
-    case 2:  printf("ÐÇÆÚÈý");     
+    case 2:  printf("æ˜ŸæœŸä¸‰");     
 	break;
-    case 3:  printf("ÐÇÆÚËÄ");     
+    case 3:  printf("æ˜ŸæœŸå››");     
 	break;
-    case 4:  printf("ÐÇÆÚÎå");       
+    case 4:  printf("æ˜ŸæœŸäº”");       
 	break;
-    case 5:  printf("ÐÇÆÚÁù");      
+    case 5:  printf("æ˜ŸæœŸå…­");      
 	break;
-    case 6:  printf("ÐÇÆÚÈÕ");      
+    case 6:  printf("æ˜ŸæœŸæ—¥");      
 	break;
   }
   return 0 ;
